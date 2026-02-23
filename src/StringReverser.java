@@ -5,7 +5,7 @@ public class StringReverser {
      * @param str the string to reverse
      * @return the reversed string
      */
-    public static String reverseString(String str) {
+    public String reverseString(String str) {
         if (str == null || str.isEmpty()) {
             return str;
         }
@@ -53,13 +53,14 @@ public class StringReverser {
     }
 
     public static void main(String[] args) {
-        String testString = "Hello World";
+        String testString = "dbaca";
 
         System.out.println("Original String: " + testString);
         System.out.println();
 
         System.out.println("Method 1 - Using StringBuilder:");
-        System.out.println("Reversed: " + reverseString(testString));
+        StringReverser reverser = new StringReverser();
+        System.out.println("Reversed: " + reverser.reverseString(testString));
         System.out.println();
 
         System.out.println("Method 2 - Using Character Array:");
